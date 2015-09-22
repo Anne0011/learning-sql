@@ -1,0 +1,2 @@
+Provide a query that includes the track name with each invoice line item.
+SELECT InvoiceLine.InvoiceLineId, InvoiceLine.InvoiceId, InvoiceLine.TrackId, InvoiceLine.UnitPrice, InvoiceLine.Quantity, Track.Name FROM InvoiceLine JOIN Track on InvoiceLine.TrackId = Track.TrackId
